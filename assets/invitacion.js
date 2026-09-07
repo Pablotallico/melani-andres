@@ -58,4 +58,15 @@
     }catch{status.textContent='No pudimos verificar el guardado. Revisa tu conexión e inténtalo de nuevo; puedes reenviar sin duplicar tu respuesta.';}
     finally{buttons.forEach(b=>b.disabled=false);}
   }));
+  if (document.body.classList.contains('reminder')) {
+    const gift = document.createElement('section');
+    gift.className = 'reminder-gift';
+    gift.innerHTML = '<p class="eyebrow">Mesa de regalos</p><p>Tu presencia es nuestro mejor regalo.</p><p>Si deseas obsequiarnos algo:</p><dl><dt>Banco</dt><dd>Pichincha</dd><dt>Cuenta</dt><dd>Ahorros · 2214572931</dd><dt>Titular</dt><dd>Melani Torres</dd><dt>Cédula</dt><dd>0940584212</dd></dl><button type="button" data-copy-account>Copiar número de cuenta</button><p data-copy-status role="status"></p>';
+    document.querySelector('.reminder-card')?.append(gift);
+    gift.querySelector('[data-copy-account]').addEventListener('click', async () => {
+      const status = gift.querySelector('[data-copy-status]');
+      try { await navigator.clipboard.writeText('2214572931'); status.textContent = 'Número de cuenta copiado.'; }
+      catch { status.textContent = 'Número de cuenta: 2214572931'; }
+    });
+  }
 })();

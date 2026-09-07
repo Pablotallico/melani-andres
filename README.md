@@ -1,4 +1,4 @@
-# Melani & Andrés · 19 de diciembre de 2026
+# Andrés & Melanie · 19 de diciembre de 2026
 
 Sitio estático, sin instalación ni compilación, preparado para GitHub Pages.
 
