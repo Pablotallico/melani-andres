@@ -1,0 +1,195 @@
+@font-face {
+  font-family: Parisienne;
+  src: url('fonts/Parisienne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Champagne & Limousines';
+  src: url('fonts/champagne.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Champagne & Limousines';
+  src: url('fonts/champagne-bold.ttf') format('truetype');
+  font-weight: 600 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* Línea compartida: arena, salvia y oliva. Licencia web confirmada por el propietario. */
+:root {
+  --title-font: 'Parisienne', 'Brush Script MT', cursive;
+  --body-font: 'Champagne & Limousines', 'Century Gothic', 'Trebuchet MS', sans-serif;
+  --ink: #343b29;
+  --paper: #f4f0e5;
+  --sand: #d8ceb8;
+  --sage: #969d85;
+  --light-sage: #dedfce;
+  --gold: #896d48;
+  --line: #b8b9a4;
+  --muted: #565d49;
+}
+body { font-family: var(--body-font); color: var(--ink); background: var(--paper); }
+.reminder { font-size: 20px; }
+.admin { font-size: 18px; }
+h1, h2, h3, .serif-note, .monogram, footer { font-family: var(--title-font); font-weight: 400; line-height: 1.25; }
+h1 em, h2 em, h3 em { font-style: normal; }
+.eyebrow { color: var(--muted); font-weight: 600; letter-spacing: .17em; }
+.topbar { background: var(--paper); border-color: var(--line); }
+.hero, .reminder-intro { background: var(--light-sage); color: var(--ink); }
+.hero { min-height: auto; padding-top: 80px; padding-bottom: 80px; }
+.hero:before { border-color: #969d8570; }
+.hero h1 { font-size: clamp(76px, 10vw, 140px); margin: 24px 0; line-height: 1.15; }
+.hero h1 span { display: inline; font-size: .65em; padding: 0 .12em; color: var(--gold); }
+.hero h1:focus:not(:focus-visible) { outline: none; }
+.hero .full-names { margin-top: 38px; letter-spacing: .05em; }
+.date-panel, .rsvp { background: var(--sand); color: var(--ink); }
+.date-panel h2 { font-family: var(--body-font); font-size: clamp(46px, 7vw, 84px); font-weight: 400; letter-spacing: .07em; }
+.family { background: var(--light-sage); }
+.schedule { background: var(--paper); }
+.section { border-color: var(--line); }
+.section > h2 { max-width: 950px; margin-left: auto; margin-right: auto; }
+.venue h2 { margin-left: 0; }
+.venue-heading .eyebrow { line-height: 1.55; }
+.venue-heading .eyebrow br { display: block; }
+.venue-details { position: relative; }
+.venue-heading .dress { margin-top: 64px; padding-top: 28px; border-top: 1px solid var(--line); max-width: 390px; }
+.venue-heading .dress .eyebrow { font-weight: 700; }
+.venue-heading .dress .serif-note { font-size: 42px; }
+.family > h2 { margin-left: 0; }
+.family article { border-color: var(--sage); }
+.family article h3 { font-size: 48px; }
+.countdown b, .invitation-page .countdown b, .stats strong { font-family: var(--body-font); font-weight: 400; line-height: 1.3; }
+.countdown { gap: clamp(18px, 4vw, 48px); }
+.countdown small { color: var(--muted); }
+.timeline span { font-family: var(--body-font); font-size: 24px; }
+.timeline time { color: var(--muted); }
+button, .button { border-radius: 3px; border-color: var(--muted); }
+button:hover, .button:hover { background: var(--ink); color: var(--paper); }
+.dark { background: var(--ink); color: var(--paper); }
+.actions button, .actions .button { min-height: 52px; }
+.guest, .invitation-page .guest { color: var(--gold); }
+.gifts details { background: #ebe5d7; border-color: var(--line); }
+.story-photo img { border-radius: 2px; }
+footer { background: var(--paper); color: var(--ink); font-size: 46px; }
+footer p, footer span { color: var(--muted); }
+.invitation-cover, .invitation-cover::backdrop { background: var(--paper); color: var(--ink); }
+.invitation-page .cover-names { font-family: var(--title-font); font-size: clamp(64px, 10vw, 125px); }
+.invitation-page .invitation-cover .eyebrow { color: var(--muted); }
+.cover-subtitle, .cover-hint { color: var(--muted); }
+.cover-names span { color: var(--gold); }
+.wax-seal {
+  border-color: #6e795b; color: var(--paper);
+  background: radial-gradient(circle at 32% 24%, #929d7e, #667250 64%, #48533c);
+  box-shadow: inset 0 2px 5px #d8ceb880, inset 0 -5px 9px #343b2940, 0 14px 28px #343b2933;
+}
+.wax-seal::before { border-color: #d8ceb899; }
+.wax-seal span { font-family: var(--title-font); font-size: 43px; }
+.wax-seal:hover {
+  color: var(--paper); background: radial-gradient(circle at 32% 24%, #9ba588, #6e795b 64%, #48533c);
+  box-shadow: inset 0 2px 5px #d8ceb880, 0 18px 30px #343b2944;
+}
+.notice { background: var(--light-sage); border-color: var(--sage); }
+.admin h1 { font-size: 64px; }
+.admin h2 { font-size: 40px; }
+.admin input, .admin select { background: #faf8f2; }
+.admin .stats { border-block: 1px solid var(--line); padding: 22px 0; }
+@media (max-width: 650px) {
+  .hero { padding: 65px 25px; }
+  .hero h1 { font-size: clamp(64px, 12vw, 82px); }
+  .hero h1 span { display: block; line-height: 1.05; padding: 3px 0; }
+  .invitation-page .cover-names { font-size: clamp(52px, 11vw, 72px); }
+  h2 { font-size: 46px; }
+  .family article h3 { font-size: 42px; }
+  .timeline span { font-size: 21px; }
+  .countdown { gap: 16px; }
+  .invitation-page .countdown b { font-size: 40px; }
+  .admin h1 { font-size: 52px; }
+}
+/* Ajustes de monograma, indicaciones y marcos de doble línea. */
+.monogram { display: inline-flex; align-items: baseline; gap: 3px; white-space: nowrap; letter-spacing: -.04em; }
+.monogram i { font-style: normal; font-size: .8em; }
+.hero-date { letter-spacing: .04em; word-spacing: 0; }
+.hero-date i { padding: 0 2px; font-style: normal; }
+.wax-seal span { font-family: Georgia, 'Times New Roman', serif; font-size: 41px; font-weight: 400; letter-spacing: -.06em; padding-right: .06em; }
+.cover-hint, .cover-subtitle, .text-link, button, .button, summary, .topbar > a:not(.monogram) { font-weight: 700; }
+.story-photo {
+  position: relative;
+  padding: clamp(22px, 2.8vw, 32px);
+  background: #f4f0e5;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  clip-path: polygon(5.5% 0, 94.5% 0, 100% 4.3%, 100% 95.7%, 94.5% 100%, 5.5% 100%, 0 95.7%, 0 4.3%);
+}
+.story-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('marco-elegante.svg') center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+.story-photo img { border-radius: 0; outline: 1px solid #b8b9a480; box-shadow: none; }
+@media (max-width: 650px) {
+  .story-photo { padding: 24px; }
+  .wax-seal span { font-size: 37px; }
+  .hero-date { font-size: 23px; letter-spacing: .025em; }
+}
+
+/* El título recibe foco al abrir el sello, sin contorno visual. */
+.hero h1:focus, .hero h1:focus-visible { outline: none; }
+/* Cuenta regresiva destacada dentro de Reserva la fecha. */
+.invitation-page .date-panel .countdown-title {
+  margin: 64px auto 0;
+  max-width: 760px;
+  padding: 30px 20px 8px;
+  background: var(--ink);
+  color: var(--paper);
+  border: 1px solid #c1a77a;
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+.invitation-page .date-panel .countdown {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 12px 28px 32px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  background: var(--ink);
+  color: var(--paper);
+  border: 1px solid #c1a77a;
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 12px 24px #343b2920;
+}
+.invitation-page .date-panel .countdown div { min-width: 0; }
+.invitation-page .date-panel .countdown div + div { border-left: 1px solid #c1a77a60; }
+.invitation-page .date-panel .countdown b {
+  color: #f4f0e5;
+  font-size: clamp(48px, 6.5vw, 80px);
+  font-weight: 700;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+.invitation-page .date-panel .countdown small {
+  display: block;
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e2d1ad;
+}
+.invitation-page .date-panel [data-countdown-message]:not(:empty) { margin-top: 24px; font-weight: 700; }
+@media (max-width: 650px) {
+  .invitation-page .date-panel .countdown-title { font-size: 17px; padding: 24px 12px 10px; }
+  .invitation-page .date-panel .countdown { padding: 12px 8px 26px; }
+  .invitation-page .date-panel .countdown b { font-size: clamp(34px, 9vw, 54px); }
+  .invitation-page .date-panel .countdown small { font-size: 15px; margin-top: 8px; }
+}

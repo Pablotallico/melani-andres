@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1300" preserveAspectRatio="none" fill="none">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="1300" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#896d48"/>
+      <stop offset=".48" stop-color="#c1a77a"/>
+      <stop offset=".75" stop-color="#e2d1ad"/>
+      <stop offset="1" stop-color="#96764e"/>
+    </linearGradient>
+  </defs>
+  <path d="M55 8H945L992 55V1245L945 1292H55L8 1245V55Z" stroke="url(#gold)" stroke-width="2" vector-effect="non-scaling-stroke"/>
+  <path d="M66 27H934L973 66V1234L934 1273H66L27 1234V66Z" stroke="#969d85" stroke-opacity=".8" stroke-width=".8" vector-effect="non-scaling-stroke"/>
+</svg>
