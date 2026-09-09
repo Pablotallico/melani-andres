@@ -1,5 +1,7 @@
 # Andrés & Melanie · 19 de diciembre de 2026
 
+Actualización RSVP (9 de septiembre): se importaron 40 invitaciones y 86 cupos desde Excel. Ambos paneles muestran estados y totales, y consultan respuestas cada 30 segundos. Sigue `CONEXION-RSVP.md` para activar la nueva implementación; sustituye las instrucciones anteriores que indicaban que las respuestas solo podían consultarse en Sheets. La URL `/exec` ya está configurada. El padrón local incluye además prueba 1 y prueba 2: total 42 invitaciones y 88 cupos. Actualizar la implementación existente de Apps Script con el código local para habilitar estos dos registros.
+
 Sitio estático, sin instalación ni compilación, preparado para GitHub Pages.
 
 ## Las cuatro páginas

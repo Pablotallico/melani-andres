@@ -5,7 +5,7 @@ window.BODA = Object.freeze({
   // Pegar el enlace exacto del lugar cuando esté confirmado. Vacío = búsqueda en Maps.
   mapaUrl: '',
   // URL pública de GitHub Pages. Vacía = usar la ubicación actual del sitio.
-  baseUrl: '',
+  baseUrl: 'https://pablotallico.github.io/melani-andres/',
   // Pegar la URL /exec de una implementación NUEVA para esta boda.
-  rsvpEndpoint: ''
+  rsvpEndpoint: 'https://script.google.com/macros/s/AKfycbxdnPEUduZCr47V0qD9zw4l68CnNnC8UypLwWnQmomRwu6hbOPTDO2OtgPTqeE_TDI/exec'
 });
