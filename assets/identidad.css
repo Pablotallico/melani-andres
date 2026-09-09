@@ -45,6 +45,8 @@ h1, h2, h3, .serif-note, .monogram, footer { font-family: var(--title-font); fon
 h1 em, h2 em, h3 em { font-style: normal; }
 .eyebrow { color: var(--muted); font-weight: 600; letter-spacing: .17em; }
 .topbar { background: var(--paper); border-color: var(--line); }
+.topbar nav { display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:flex-end; }
+.topbar-button { border:1px solid var(--line); padding:9px 16px; font-weight:700; }
 .hero, .reminder-intro { background: var(--light-sage); color: var(--ink); }
 .hero { min-height: auto; padding-top: 80px; padding-bottom: 80px; }
 .hero:before { display: none; }
@@ -63,6 +65,8 @@ h1 em, h2 em, h3 em { font-style: normal; }
 .invitation-page .rsvp::before { right: 16px; top: 18px; opacity: .22; transform: rotate(8deg); }
 .invitation-page .family::after, .invitation-page .schedule::after { content: '·  ·  ·'; position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); color: var(--gold); letter-spacing: .55em; font-size: 22px; opacity: .75; }
 .hero h1 { font-size: clamp(76px, 10vw, 140px); margin: 24px 0; line-height: 1.15; }
+.invitation-cover .cover-guest { display:block; color:var(--gold); font-family:var(--title-font); font-size:clamp(32px,4vw,52px); margin:0 0 14px; }
+.gift-message { max-width:680px; margin:0 auto 28px; font-size:1.1rem; }
 .hero h1 span { display: inline; font-size: .65em; padding: 0 .12em; color: var(--gold); }
 .hero h1:focus:not(:focus-visible) { outline: none; }
 .hero .full-names { margin-top: 38px; letter-spacing: .05em; }

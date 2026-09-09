@@ -1,6 +1,6 @@
 # Activar confirmaciones de Andrés & Melanie
 
-Lista importada: 40 invitaciones, 86 cupos. Se añadieron por solicitud dos invitaciones de prueba (ma-041: prueba 1; ma-042: prueba 2), un cupo cada una en Familia novio. Total del panel: 42 invitaciones y 88 cupos, incluidos los dos de prueba. El Excel conserva los 40 registros originales. Para aceptar las pruebas, actualizar la implementación de Apps Script con el padrón local actualizado. Fuente: `excel/melani-andres.xlsx`, hoja `Control Invitados`, filas 12–51. Se conservan los nombres tal como están escritos; se omiten acompañantes, mesas y notas.
+Lista importada: 40 invitaciones, 86 cupos. Para aceptar las pruebas, actualizar la implementación de Apps Script con el padrón local actualizado. Fuente: `excel/melani-andres.xlsx`, hoja `Control Invitados`, filas 12–51. Se conservan los nombres tal como están escritos; se omiten acompañantes, mesas y notas.
 
 1. Abrir la hoja de Google proporcionada, con la cuenta propietaria: https://docs.google.com/spreadsheets/d/1ly6gk_DQbv-kQyGhEtMktRyUnshnympA9hF7U_lhUtw/edit
 2. Ir a **Extensiones → Apps Script**. Pegar el contenido completo de `google-apps-script-rsvp.js` en un proyecto nuevo vinculado a esta hoja y guardar.
@@ -20,3 +20,4 @@ Fecha límite mantenida: **1 de octubre de 2026, 23:59:59 (Ecuador)**. Las respu
 Para futuras modificaciones de invitados, mantener los mismos IDs y actualizar tanto `assets/invitados-data.js` como el padrón `GUESTS` del Apps Script. Después actualizar la implementación. No hay importación continua desde Excel.
 
 El Excel fuente no necesita publicarse en GitHub. No subir archivos temporales que comienzan por `~$`.
+

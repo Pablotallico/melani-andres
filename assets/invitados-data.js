@@ -320,21 +320,5 @@ window.INVITADOS = [
     "cupos": 2,
     "grupo": "Familia novio",
     "tipo": "esposa"
-  },
-  {
-    "id": "ma-041",
-    "titulo": "",
-    "nombre": "prueba 1",
-    "cupos": 1,
-    "grupo": "Familia novio",
-    "tipo": "solo"
-  },
-  {
-    "id": "ma-042",
-    "titulo": "",
-    "nombre": "prueba 2",
-    "cupos": 1,
-    "grupo": "Familia novio",
-    "tipo": "solo"
   }
 ];

@@ -55,3 +55,4 @@ La fecha límite se aplica tanto en la página como en Apps Script: 1 de octubre
 - Confirmar que se desea mantener la fecha límite del 1 de octubre de 2026.
 
 La boda inicia a las 15h00 (UTC−05:00). Google Calendar reserva una hora para el inicio; Apple Calendar crea un evento de inicio sin una hora final inventada. El programa completo se incluye en la descripción de ambos. No se han agregado fotografías de otras parejas ni música ajena; esta versión se apoya en tipografía y composición. Las fuentes usan Google Fonts, con alternativas locales si no hay conexión.
+
