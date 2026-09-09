@@ -1,4 +1,4 @@
-# Activar confirmaciones de Andrés & Melanie
+# Activar confirmaciones de Andrés & Melani
 
 Lista importada: 40 invitaciones, 86 cupos. Para aceptar las pruebas, actualizar la implementación de Apps Script con el padrón local actualizado. Fuente: `excel/melani-andres.xlsx`, hoja `Control Invitados`, filas 12–51. Se conservan los nombres tal como están escritos; se omiten acompañantes, mesas y notas.
 
@@ -20,4 +20,5 @@ Fecha límite mantenida: **1 de octubre de 2026, 23:59:59 (Ecuador)**. Las respu
 Para futuras modificaciones de invitados, mantener los mismos IDs y actualizar tanto `assets/invitados-data.js` como el padrón `GUESTS` del Apps Script. Después actualizar la implementación. No hay importación continua desde Excel.
 
 El Excel fuente no necesita publicarse en GitHub. No subir archivos temporales que comienzan por `~$`.
+
 

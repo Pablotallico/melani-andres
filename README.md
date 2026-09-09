@@ -1,4 +1,4 @@
-# Andrés & Melanie · 19 de diciembre de 2026
+# Andrés & Melani · 19 de diciembre de 2026
 
 Actualización RSVP (9 de septiembre): se importaron 40 invitaciones y 86 cupos desde Excel. Ambos paneles muestran estados y totales, y consultan respuestas cada 30 segundos. Sigue `CONEXION-RSVP.md` para activar la nueva implementación; sustituye las instrucciones anteriores que indicaban que las respuestas solo podían consultarse en Sheets. La URL `/exec` ya está configurada. El padrón local incluye además prueba 1 y prueba 2: total 42 invitaciones y 88 cupos. Actualizar la implementación existente de Apps Script con el código local para habilitar estos dos registros.
 
@@ -55,4 +55,5 @@ La fecha límite se aplica tanto en la página como en Apps Script: 1 de octubre
 - Confirmar que se desea mantener la fecha límite del 1 de octubre de 2026.
 
 La boda inicia a las 15h00 (UTC−05:00). Google Calendar reserva una hora para el inicio; Apple Calendar crea un evento de inicio sin una hora final inventada. El programa completo se incluye en la descripción de ambos. No se han agregado fotografías de otras parejas ni música ajena; esta versión se apoya en tipografía y composición. Las fuentes usan Google Fonts, con alternativas locales si no hay conexión.
+
 

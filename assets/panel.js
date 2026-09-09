@@ -9,7 +9,7 @@ if(guests.some(g=>!g.id||ids.has(g.id)||!ids.add(g.id)||!g.nombre||!Number.isInt
 const base=new URL(cfg.baseUrl?cfg.baseUrl.replace(/\/$/,'')+'/':'./',location.href);
 const local=base.protocol==='file:'||['localhost','127.0.0.1'].includes(base.hostname);
 const url=g=>{const u=new URL(reminder?'recordatorio.html':'index.html',base);u.search=new URLSearchParams({id:g.id,titulo:g.titulo||'',nombre:g.nombre,cupos:g.cupos,tipo:g.tipo||''});return u.href;};
-const message=g=>[g.titulo+' '+g.nombre,'',reminder?'¡Nos vemos muy pronto!':'¡Nos casamos!','Andrés y Melanie · 19 de diciembre de 2026 · 15h00','Quinta La Corteza, Valle de los Chillos','Vestimenta: formal elegante','Cupos reservados: '+g.cupos,'',url(g),'','Confirma hasta el 1 de octubre de 2026.'].join('\n');
+const message=g=>[g.titulo+' '+g.nombre,'',reminder?'¡Nos vemos muy pronto!':'¡Nos casamos!','Andrés y Melani · 19 de diciembre de 2026 · 15h00','Quinta La Corteza, Valle de los Chillos','Vestimenta: formal elegante','Cupos reservados: '+g.cupos,'',url(g),'','Confirma hasta el 1 de octubre de 2026.'].join('\n');
 let responses=new Map(),loaded=false,busy=false,visible=[];
 const labels={si:'Confirmado',no:'No asistirá',pendiente:'Pendiente'};
 const value=g=>responses.get(g.id)?.respuesta||'pendiente';
@@ -74,3 +74,4 @@ render();refresh();
 setInterval(()=>{if(!document.hidden)refresh();},30000);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
 })();
+

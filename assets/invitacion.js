@@ -21,10 +21,10 @@
   document.querySelectorAll('[data-map]').forEach(el => el.href=cfg.mapaUrl || 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(cfg.lugar));
   document.querySelectorAll('[data-full-invite]').forEach(el => el.href='index.html'+location.search);
   const calendar = new URL('https://calendar.google.com/calendar/render');
-  calendar.search = new URLSearchParams({action:'TEMPLATE',text:'Boda de Andrés & Melanie',dates:'20261219T200000Z/20261219T210000Z',ctz:'America/Guayaquil',location:cfg.lugar,details:'Inicio de nuestra celebración: boda civil 15h00; boda eclesiástica 16h00; fotos y cócteles 17h00; cena 19h00; fiesta 20h00. El horario del calendario corresponde al inicio, no a la duración de la celebración. Vestimenta: formal elegante.'});
+  calendar.search = new URLSearchParams({action:'TEMPLATE',text:'Boda de Andrés & Melani',dates:'20261219T200000Z/20261219T210000Z',ctz:'America/Guayaquil',location:cfg.lugar,details:'Inicio de nuestra celebración: boda civil 15h00; boda eclesiástica 16h00; fotos y cócteles 17h00; cena 19h00; fiesta 20h00. El horario del calendario corresponde al inicio, no a la duración de la celebración. Vestimenta: formal elegante.'});
   document.querySelectorAll('[data-google-calendar]').forEach(el=>el.href=calendar.href);
   document.querySelectorAll('[data-apple-calendar]').forEach(el=>el.addEventListener('click',()=>{
-    const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Melani y Andres//Boda//ES','CALSCALE:GREGORIAN','BEGIN:VEVENT','UID:melani-andres-20261219@invitacion','DTSTAMP:20260907T000000Z','DTSTART:20261219T200000Z','SUMMARY:Boda de Andrés & Melanie','LOCATION:Quinta La Corteza\\, Valle de los Chillos\\, Ecuador','DESCRIPTION:Boda civil 15h00. Boda eclesiástica 16h00. Fotos y cócteles','  17h00. Cena 19h00. Fiesta 20h00. Vestimenta: formal elegante.','END:VEVENT','END:VCALENDAR',''].join('\r\n');
+    const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Melani y Andres//Boda//ES','CALSCALE:GREGORIAN','BEGIN:VEVENT','UID:melani-andres-20261219@invitacion','DTSTAMP:20260907T000000Z','DTSTART:20261219T200000Z','SUMMARY:Boda de Andrés & Melani','LOCATION:Quinta La Corteza\\, Valle de los Chillos\\, Ecuador','DESCRIPTION:Boda civil 15h00. Boda eclesiástica 16h00. Fotos y cócteles','  17h00. Cena 19h00. Fiesta 20h00. Vestimenta: formal elegante.','END:VEVENT','END:VCALENDAR',''].join('\r\n');
     const url=URL.createObjectURL(new Blob([ics],{type:'text/calendar;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='boda-melani-andres.ics';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   }));
   function tick(){
@@ -49,7 +49,7 @@
   }
   const status=document.getElementById('rsvp-status');if(!status)return;
   const buttons=[...document.querySelectorAll('[data-rsvp]')];
-  if(Date.now()>new Date(cfg.limite).getTime()){status.textContent='El plazo de confirmación finalizó. Por favor, comunícate con Andrés o Melanie.';return;}
+  if(Date.now()>new Date(cfg.limite).getTime()){status.textContent='El plazo de confirmación finalizó. Por favor, comunícate con Andrés o Melani.';return;}
   if(!cfg.rsvpEndpoint)return;
   if(!validGuest){status.textContent='Abre tu enlace personalizado para confirmar tu asistencia.';return;}
   status.textContent='Selecciona tu respuesta para enviarla.';buttons.forEach(b=>b.disabled=false);
@@ -71,3 +71,4 @@
   }));
 
 })();
+
